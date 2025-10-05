@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<hmtl>
+  <head>
+    <title>Realty Site - Map Example</title>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css"/> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  </head>
+
+   <!-- This is the Navigation section -->
+  
+  <header id="header">
+     <div class="container nav_class">
+      <img id="header-img" src="real-estate-images/real-estate-logo.jpg">
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-link"><a href="search-for-homes.html">SEARCH FOR HOMES</a></li>
+          <li class="nav-link"><a href="agents-and-offices.html">AGENTS AND OFFICES</a></li>
+          <li class="nav-link"><a href="location-information.hmtl">LOCATION INFORMATION</a></li>
+          <li class="nav-link"><a href="buying-and selling">BUYING & SELLING YOUR HOME |</a></li>
+          <li class="nav-link"><a href="about-us">ABOUT US |</a></li>
+          <li class="nav-link"><a href="account">ACCOUNT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="realty-container">
+<ul id="realty-list">
+  <li class="realty-form">
+    <label for="search">SEARCH</label>
+    <input
+      type="text"
+      id="LOCATION"
+      name="LOCATION"
+      value="LOCATION"
+      />
+
+  <li class="realty-form">
+    <label for="PRICE">PRICE</label>
+    <input
+      type="text"
+      id="MIN"
+      name="MIN"
+      value="MIN"
+      />
+  </li>
+
+  <li>TO</li>
+
+  <li class="realty-form">
+    <label for="PRICE">PRICE</label>
+    <input
+      type="text"
+      id="MAX"
+      name="MAX"
+      value="MAX"
+      />
+  </li>
+
+  <li class="realty-form">
+    <label for="BEDS">PRICE</label>
+    <input
+      type="text"
+      id="AVG"
+      name="AVG"
+      value="AVG"
+      />
+  </li>
+
+  <li class="realty-form">
+    <button type="update">UPDATE</button>
+  </li>
+
+  <li class="realty-form">
+    <button type="ADVANCED SEARCH"><u>ADVANCED SEARCH</u></button>
+  </li>
+</ul>
+</div>
+
+<section class="float-container">
+     <div class="box">
+    <div id="main-gallery-container">
+        <figure>
+          <img 
+          src="real-estate-images/property1.jpg"
+          alt="property1"
+          title="property1image"/>
+        </figure>
+    <p class="typography-text">
+      SPACIOUS COTTAGE FOR SALE $100,000
+    </p>
+       <p>This lovely property is nested between the hils of trolls and forests of fairies. <br />
+       With 4 luxury bedrooms and 3 modern bathrooms.  This spacious cottage has everything
+    </p>
+   </div>
+  </div>
+
+  <div class="box">
+    <div id="main-gallery-container">
+        <figure>
+          <img 
+          src="real-estate-images/property 2.jpg"
+          alt="property2"
+          title="property2image"/>
+        </figure>
+    <p class="typography-text">
+      SPACIOUS COTTAGE FOR SALE $100,000
+    </p>
+       <p>This lovely property is nested between the hils of trolls and forests of fairies. <br />
+       With 2 luxury bedrooms and 1 modern bathroom.  This spacious cottage has everything
+    </p>
+   </div>
+  </div>
+
+  <div class="box">
+    <div id="main-gallery-container">
+        <figure>
+          <img 
+          src="real-estate-images/property3.jpg"
+          alt="property3"
+          title="property3image"/>
+        </figure>
+    <p class="typography-text">
+      SPACIOUS COTTAGE FOR SALE $215,000
+    </p>
+       <p>This lovely property is nested between the hils of trolls and forests of fairies. <br />
+       With 3 luxury bedrooms and 2 modern bathrooms.  This spacious cottage has everything
+    </p>
+   </div>
+  </div>
+
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.278173278373!2d-0.0759493!3d51.508112399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760349331f38dd%3A0xa8bf49dde1d56467!2sTower%20of%20London!5e0!3m2!1sen!2suk!4v1758190130716!5m2!1sen!2suk"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      </div>
+    </div>
+
+    <div class="iframe-controls">
+      <button onclick="reloadFrame()">Reload Content</button>
+      <button onclick="toggleFullscreen()">Fullscreen</button>
+    </div>
+
+    <script>
+      function reloadFrame() {
+        const frame = document.querySelector('iframe');
+        frame.src = frame.src;
+      }
+
+      function toggleFullscreen() {
+        const frame = document.querySelector('iframe');
+        if (frame.requestFullscreen) {
+          frame.requestFullscreen();
+        }
+      }
+    </script>
+  </section>
+
+<footer>
+  <div class="footer-content">
+
+    <ul class="footer-links">
+      <img id="header-img" src="real-estate-images/real-estate-logo.jpg">
+        <li class="nav-link"><a href="search-for-homes.html">SEARCH FOR HOMES</a></li>
+        <li class="nav-link"><a href="agents-and-offices.html">AGENTS AND OFFICES</a></li>
+        <li class="nav-link"><a href="location-information.hmtl">LOCATION INFORMATION</a></li>
+        <li class="nav-link"><a href="buying-and selling">BUYING & SELLING YOUR HOME</a></li>
+        <li class="nav-link"><a href="about-us">ABOUT US</a></li>
+        <li class="nav-link"><a href="account">ACCOUNT</a></li>
+    </ul>
+
+  <p class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+  </p>
+    </div>
+  </footer>
+  </body>
+</hmtl>
